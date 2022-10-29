@@ -22,7 +22,6 @@ jobs:
           node-version: '18.x'
       - name: "Creating build folder"
         run: |
-          "mkdir build"
           "cd build"
       - name: download server
         run: |
