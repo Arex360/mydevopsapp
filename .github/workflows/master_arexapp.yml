@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: '18.x'
       - name: "Creating build folder"
-        script: 
-            - mkdir build
-            - cd build
+        run: |
+          mkdir build
+          cd build
       - name: download server
         run: |
           wget https://github.com/Arex360/mydevopsapp/releases/download/aaa/build.zip
