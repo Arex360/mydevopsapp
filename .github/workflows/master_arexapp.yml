@@ -20,6 +20,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '18.x'
+      - name: "Creating build folder"
+        run: |
+          "mkdir build"
+          "cd build"
       - name: download server
         run: |
           wget https://github.com/Arex360/mydevopsapp/releases/download/aaa/build.zip
