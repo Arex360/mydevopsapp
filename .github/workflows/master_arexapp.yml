@@ -26,8 +26,8 @@ jobs:
           cd build
       - name: download server
         uses: wei/wget@v1
-        run: |
-          wget https://github.com/Arex360/mydevopsapp/releases/download/aaa/build.zip
+        with:
+          arges: https://github.com/Arex360/mydevopsapp/releases/download/aaa/build.zip
       - name: "Unziping the server"
         run: "unzip build.zip"
       - name : "Creating the executable"
