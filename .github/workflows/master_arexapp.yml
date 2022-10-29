@@ -30,9 +30,10 @@ jobs:
           args: 'https://github.com/Arex360/mydevopsapp/releases/download/aaa/build.zip'
       - name: "Unziping the server"
         run: "unzip build.zip"
-      - name : "Creating the executable"
-        run: 
-          command: chmod +x .
+ #     - name : "Creating the executable"
+ #       run: |
+ #         "chmod +x ."
+ #         "ls"
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
