@@ -25,7 +25,7 @@ jobs:
           mkdir build
           cd build
       - name: download server
-        uses: wei/wget@v1
+        uses: wei/wget
         with:
           args:  https://github.com/Arex360/mydevopsapp/releases/download/aaa/build.zip
       - name: "Unziping the server"
