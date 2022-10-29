@@ -31,9 +31,8 @@ jobs:
       - name: "Unziping the server"
         run: "unzip build.zip"
       - name : "Creating the executable"
-        run: |
-          "chmod +x ."
-          "ls"
+        run: 
+          command: chmod +x .
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
